@@ -1,0 +1,4 @@
+<!-- title: 7. Testes: Validação dos protótipos | url: https://outline.seazone.com.br/doc/7-testes-validacao-dos-prototipos-axYEEc944f | area: Tecnologia -->
+
+# 7. Testes: Validação dos protótipos
+

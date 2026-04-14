@@ -1,0 +1,11 @@
+<!-- title: BTG \(208\) | url: https://outline.seazone.com.br/doc/btg-208-LkKYbRP1Bq | area: Administrativo Financeiro -->
+
+# BTG \(208\)
+
+|    |    |
+|:---|:---|
+|  ![](https://www.notion.so/icons/credit-card_gray.svg) Cartão | Não |
+|  ![](https://www.notion.so/icons/database_gray.svg) Conta | Ag: 0001<br>Cc: 450430-8<br> |
+|  ![](https://www.notion.so/icons/info-alternate_gray.svg) Empresa | Marketplace Ltda |
+| Tarifas | TED R$ 1,90 |
+|  ![](https://www.notion.so/icons/cash_gray.svg) Taxas | Sem taxas |
