@@ -236,7 +236,7 @@ if _prompt_to_run:
             if "Timeout" in err_name or "timeout" in str(e).lower():
                 placeholder.markdown("O servidor de IA esta temporariamente indisponivel. Tente novamente em alguns segundos.")
             else:
-                placeholder.markdown(f"Ocorreu um erro ao processar sua pergunta. Tente novamente.")
+                placeholder.markdown(f"Ocorreu um erro ao processar sua pergunta. Tente novamente.\n\n**Debug:** `{err_name}: {e}`")
             full = ""
             sources = []
 
