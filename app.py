@@ -17,9 +17,19 @@ from retrieval import retrieve
 
 load_dotenv()
 
-# Auto-ingest on first run if chroma_db doesn't exist
+# Auto-ingest if the collection isn't usable yet (missing dir, empty dir, or
+# collection never created because a previous ingest crashed partway).
+import chromadb
+from chromadb.errors import NotFoundError
+
 _db_path = Path(__file__).parent / "chroma_db"
-if not _db_path.exists() or not any(_db_path.iterdir()):
+_needs_ingest = not _db_path.exists() or not any(_db_path.iterdir())
+if not _needs_ingest:
+    try:
+        chromadb.PersistentClient(path=str(_db_path)).get_collection("seazone_kb")
+    except (NotFoundError, ValueError):
+        _needs_ingest = True
+if _needs_ingest:
     with st.spinner("Primeira execucao: indexando documentos... isso pode levar alguns minutos."):
         import ingest
         ingest.main()
